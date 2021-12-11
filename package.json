@@ -2,7 +2,7 @@
   "name": "copy-as-snippet",
   "displayName": "Copy As Snippet",
   "description": "Copy Selected Text as VSCode Snippet Object",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "publisher": "Thinker",
   "license": "MIT",
   "icon": "images/logo.png",
@@ -40,23 +40,32 @@
   "contributes": {
     "commands": [
       {
-        "command": "copy-as-snippet.copyAsSnippet",
-        "title": "Copy As Snippet"
+        "command": "copy-as-snippet.copyAsSnippetObj",
+        "title": "Copy As Snippet Object"
+      },
+      {
+        "command": "copy-as-snippet.copyAsSnippetBody",
+        "title": "Copy As Snippet Body"
       }
     ],
     "keybindings": [
-			{
-				"command": "copy-as-snippet.copyAsSnippet",
-				"mac": "Cmd+Ctrl+c",
-				"linux": "Meta+Ctrl+c",
-				"win": "Ctrl+shift+c",
-				"when": "editorHasSelection"
-			}
-		],
+      {
+        "command": "copy-as-snippet.copyAsSnippetObj",
+        "mac": "Cmd+Ctrl+c",
+        "linux": "Meta+Ctrl+c",
+        "win": "Ctrl+shift+c",
+        "when": "editorHasSelection"
+      }
+    ],
     "menus": {
       "editor/context": [
         {
-          "command": "copy-as-snippet.copyAsSnippet",
+          "command": "copy-as-snippet.copyAsSnippetObj",
+          "when": "editorHasSelection",
+          "group": "9_cutcopypaste@2"
+        },
+        {
+          "command": "copy-as-snippet.copyAsSnippetBody",
           "when": "editorHasSelection",
           "group": "9_cutcopypaste@2"
         }
