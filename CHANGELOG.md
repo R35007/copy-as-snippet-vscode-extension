@@ -1,3 +1,6 @@
+## v2.0.3
+
+ - Build Size Reduced.
 ## v2.0.2
 
  - Added `copyAsSnippetObj` and `copyAsSnippetBody` command.

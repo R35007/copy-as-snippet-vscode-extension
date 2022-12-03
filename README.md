@@ -11,4 +11,4 @@ This Extension helps to copy multiline codes or txt as a VSCode Snippet Object.
 That's it !. No need to worry about converting a multiline text to a snippet.
 
 ## Preview
-![Preview](./images/Preview.gif)
+![Preview](https://user-images.githubusercontent.com/23217228/205440697-ad2228d3-7d46-4b32-b326-6a09c304f70a.gif)
